@@ -1,0 +1,16 @@
+{
+  "name": "weapp-vantui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "babel-plugin-import": "^1.13.3",
+    "vant": "^2.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
