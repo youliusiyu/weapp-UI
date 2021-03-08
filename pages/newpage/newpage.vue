@@ -15,14 +15,14 @@
 							<image src="../../images/bot-arrow.png" class="bot_arrow"></image>
 						</view>
 					</swiper-item>
-					<swiper-item>
+					<swiper-item id="swiper2">
 						<view class="item" style="height: 100vh;">
 							<image src="../../images/p1.jpg" class="item_1_img" mode="aspectFill"></image>
 						</view>
 						<view class="hov">
 							<image src="../../images/jl.png" class="hov_img"></image>
 						</view>
-						<view class="bot">
+						<view class="bot" id="bot2">
 							<image src="../../images/bot-arrow.png" class="bot_arrow"></image>
 						</view>
 					</swiper-item>
@@ -53,18 +53,18 @@
 							</view>
 							<view class="bottom-arrow"></view>
 						</view>
-						<view class="bot">
+						<view class="bot" >
 							<image src="../../images/bot-arrow.png" class="bot_arrow"></image>
 						</view>
 					</swiper-item>
 					<swiper-item>
-						<view class="item" style="height:100vh; position: relative;">
+						<view v-if="!posterImg" class="item" style="height:100vh; position: relative;">
 							<view class="kole">
-								<text class="f_1">可口可乐{{textarea}}</text>
+								<text class="f_1" style="{font-family: fontFamily}">可口可乐{{textarea}}</text>
 							</view>
 							<view class="imgbg">
 								<image class="bg" src="../../images/w3.png" mode="aspectFill"></image>
-								<view class="create">生成海报</view>
+								<view class="create" @click="createPoster">生成海报</view>
 							</view>
 							<view class="text-area">
 								<view class="areabox">
@@ -75,6 +75,9 @@
 							</view>
 							<!-- <view class="create">生成海报</view> -->
 						</view>
+						<view style="height:100vh; position: relative;" >
+							<image :src="posterImg" class="posterImg"></image>
+						</view>
 					</swiper-item>
 				</swiper>
 			</view>
@@ -84,6 +87,7 @@
 </template>
 
 <script>
+	import html2canvas from 'html2canvas';
 	export default {
 		data() {
 			return {
@@ -92,7 +96,10 @@
 				interval: 2000,
 				duration: 300,
 				screenHeight:'100vh',
-				textarea:''
+				textarea:'',
+				fontFamily:'',
+				fontArray:[],
+				posterImg:null,
 			}
 		},
 		onLoad() {
@@ -112,6 +119,24 @@
 						this.screenHeight = res.screenHeight*2 + 'rpx'
 					}
 				})
+			},
+			createPoster(){
+				let that = this
+				let domObj = document.getElementById('swiper2')
+				let dombot = document.getElementById('bot2')
+				html2canvas(domObj,{
+					useCORS: true,
+					allowTaint: false,
+					logging: false,
+					letterRendering: true,
+					ignoreElements:(dombot) => {
+						if(dombot.id==='bot2'){
+							return true
+						}
+					}
+				}).then(function(canvas) {
+				    that.posterImg = canvas.toDataURL('image/png')
+				});
 			}
 		}
 	}
@@ -276,5 +301,10 @@
 		letter-spacing:20rpx;
 		font-weight: bold;
 		font: 32px;
+	}
+	
+	.posterImg {
+		width: 750rpx;
+		height: 1624rpx;
 	}
 </style>
