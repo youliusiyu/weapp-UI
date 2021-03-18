@@ -61,13 +61,14 @@
 			change(e){
 				console.log(e)
 				let id = e.currentTarget.id
-				this.toPage('/pages/eason/eason')
 				switch(parseInt(id)){
 					case 0 :
 						this.active.transform = 'translateX(60px) translateX(-50%)'
+						this.toPage('/pages/eason/eason')
 						break;
 					case 1 :
 						this.active.transform = 'translateX(180px) translateX(-50%)'
+						this.toPage('/pages/animationDemo/animationDemo')
 						break;
 					case 2 :
 						this.active.transform = 'translateX(300px) translateX(-50%)'
