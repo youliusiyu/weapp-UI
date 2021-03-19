@@ -5,6 +5,7 @@
   "main": "main.js",
   "dependencies": {
     "babel-plugin-import": "^1.13.3",
+    "fabric": "^4.3.1",
     "vant": "^2.12.7"
   },
   "devDependencies": {

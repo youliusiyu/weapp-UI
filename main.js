@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import App from './App'
 import Vant from 'vant'
+import {fabric} from 'fabric'
 
+Vue.use(fabric);
 Vue.use(Vant)
 Vue.config.productionTip = false
 
