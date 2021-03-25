@@ -5,7 +5,11 @@
   "main": "main.js",
   "dependencies": {
     "babel-plugin-import": "^1.13.3",
+    "createjs": "^1.0.1",
     "fabric": "^4.3.1",
+    "pixi.js": "^6.0.0",
+    "script-loader": "^0.7.2",
+    "spritejs": "^3.7.29",
     "vant": "^2.12.7"
   },
   "devDependencies": {

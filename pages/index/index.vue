@@ -34,6 +34,11 @@
 			<view class="item-5"></view>
 			<view class="item-6"></view>
 		</view>
+		<view style="display: flex;align-items: center;justify-content: center; flex-direction: column;">
+			<button style="background-color: #007580; width: 200rpx; color: white;" @click="toPage('/pages/pixi/pixi')" >PIXI</button>
+			<button style="background-color: #007580; width: 200rpx; color: white;" @click="toPage('/pages/createjs/createjs')" >createjs</button>
+			<button style="background-color: #007580; width: 200rpx; color: white;" @click="toPage('/pages/spritejs/spritejs')" >spritejs</button>
+		</view>
 	</view>
 </template>
 
@@ -54,6 +59,7 @@
 		},
 		methods: {
 			toPage(url){
+				console.log(url)
 				uni.navigateTo({
 					url:url
 				})
