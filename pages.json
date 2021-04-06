@@ -75,6 +75,16 @@
             }
             
         }
+        ,{
+            "path" : "pages/newpage/daodubook",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

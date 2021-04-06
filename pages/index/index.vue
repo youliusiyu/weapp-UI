@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
+		<image class="logo" src="/static/logo.png" @click="toPage('/pages/newpage/daodubook')"></image>
 		<view class="text-area" @click="toPage('/pages/newpage/newpage')">
 			<text class="title">{{title}}</text>
 		</view>

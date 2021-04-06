@@ -22,20 +22,20 @@
 			}
 		},
 		onLoad() {
-			const srcParts = [
-			  [0, 0, 190, 268],
-			  [0, 269, 190, 268],
-			  [191, 0, 190, 268],
-			  [191, 269, 190, 268],
-			];
-			for(let i = 0; i < 2; i++) {
-			  for(let j = 0; j < 2; j++) {
-			    const sourceRect = srcParts[i * 2 + j];
-			    const x = 360 + i * 200;
-			    const y = j * 278;
-				console.log(sourceRect,x,y)
-			  }
-			}
+			// const srcParts = [
+			//   [0, 0, 190, 268],
+			//   [0, 269, 190, 268],
+			//   [191, 0, 190, 268],
+			//   [191, 269, 190, 268],
+			// ];
+			// for(let i = 0; i < 2; i++) {
+			//   for(let j = 0; j < 2; j++) {
+			//     const sourceRect = srcParts[i * 2 + j];
+			//     const x = 360 + i * 200;
+			//     const y = j * 278;
+			// 	console.log(sourceRect,x,y)
+			//   }
+			// }
 		},
 		async onReady() {
 			let winfo = await this.getWindowInfo()
