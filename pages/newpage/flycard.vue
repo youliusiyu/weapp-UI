@@ -1,7 +1,10 @@
 <template>
-  <div>
+  <div style="background-image: linear-gradient(to bottom, #a8edea 0%, #fed6e3 100%);width: 100vw; height: 100vh;display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;">
     <div class="stack-wrapper">
-      <stack ref="stack" :pages="someList" :stackinit="stackinit"></stack>
+      <stack ref="stack" :pages="someList" :stackinit="stackinit" ></stack>
     </div>
     <div class="controls">
       <button @click="prev" class="button">prev</button>
@@ -63,11 +66,14 @@ export default {
 </script>
 <style>
   .stack-wrapper{
+	/* display: flex; */
+	/* align-items: center; */
+	/* justify-content: center; */
     margin: 0 auto;
     position: relative;
     z-index: 1000;
-    width: 320px;
-    height: 320px;
+    width: 650rpx;
+    height: 800rpx;
     padding: 0;
     list-style: none;
     pointer-events: none;

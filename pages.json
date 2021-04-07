@@ -96,6 +96,26 @@
 		    
 		}
     ],
+	// "tabBar": {
+	// 	"color": "#FFFFFF",
+	// 	"selectedColor": "#FFFFFF",
+	// 	"backgroundColor": "#DF2528",
+	// 	"height": "100px",
+	// 	"list": [
+	// 		{
+	// 			"pagePath": "pages/newpage/daodubook",
+	// 			"iconPath": "static/image/ic_tabbar_home_nor.png",
+	// 			"selectedIconPath": "static/image/ic_tabbar_home_foc.png",
+	// 			"text": "首页"
+	// 		},
+	// 		{
+	// 			"pagePath": "pages/newpage/flycard",
+	// 			"iconPath": "static/image/ic_tabbar_work_nor.png",
+	// 			"selectedIconPath": "static/image/ic_tabbar_work_foc.png",
+	// 			"text": "活动"
+	// 		}
+	// 	]
+	// },
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

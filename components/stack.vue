@@ -13,6 +13,9 @@
       @webkit-transition-end="onTransitionEnd(index)"
       @transitionend="onTransitionEnd(index)">
         <div v-html="item.html"></div>
+		<!-- <view class="ig">
+			asdasdasdasdasdasdasdadddddddddddddddd
+		</view> -->`1
       </view>
     </view>
 </template>
@@ -75,13 +78,13 @@ export default {
     }
   },
   mounted () {
-    // // 绑定事件
-    // this.$on('next', () => {
-    //   this.next()
-    // })
-    // this.$on('prev', () => {
-    //   this.prev()
-    // })
+    // 绑定事件
+    this.$on('next', () => {
+      this.next()
+    })
+    this.$on('prev', () => {
+      this.prev()
+    })
     // document.addEventListener('touchmove', (e) => {
     //   e.preventDefault()
     // })
@@ -91,7 +94,6 @@ export default {
       if (this.temporaryData.tracking) {
         return
       }
-	  console.log(e)
       // 是否为touch
       if (e.type === 'touchstart') {
         if (e.touches.length > 1) {
@@ -123,11 +125,11 @@ export default {
       // 记录滑动位置
       if (this.temporaryData.tracking && !this.temporaryData.animation) {
         if (e.type === 'touchmove') {
-          e.preventDefault()
+          // e.preventDefault()
           this.basicdata.end.x = e.touches[0].clientX
           this.basicdata.end.y = e.touches[0].clientY
         } else {
-          e.preventDefault()
+          // e.preventDefault()
           this.basicdata.end.x = e.clientX
           this.basicdata.end.y = e.clientY
         }
@@ -301,8 +303,8 @@ export default {
   }
   .stack-item{
     background: #fff;
-    height: 100%;
-    width: 100%;
+    height: 320px;
+    width: 320px;
     border-radius: 4px;
     text-align: center;
     overflow: hidden;

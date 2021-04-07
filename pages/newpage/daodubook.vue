@@ -86,9 +86,15 @@
 					// setTimeout(() => {
 						this.prenext = '40rpx'
 					// },500)
+					uni.showTabBar({
+						animation:true
+					})
 				}else {
 					this.isActive = !this.isActive
 					this.prenext = '0rpx'
+					uni.hideTabBar({
+						animation:true
+					})
 				}
 				
 			},
@@ -113,15 +119,17 @@
 		width: 750rpx; 
 		height: 1000rpx;
 		transition: all  0.5s;
+		z-index: 999;
 	}
 	.swiper_active{
 		width: 100vw;
 		height: 100vh;
 		transition: all  0.5s;
+		z-index: 1000;
 	}
 	.box {
 		width: 100vw;
-		height: 100vh;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
