@@ -38,6 +38,7 @@
 			<button style="background-color: #007580; width: 200rpx; color: white;" @click="toPage('/pages/pixi/pixi')" >PIXI</button>
 			<button style="background-color: #007580; width: 200rpx; color: white;" @click="toPage('/pages/createjs/createjs')" >createjs</button>
 			<button style="background-color: #007580; width: 200rpx; color: white;" @click="toPage('/pages/spritejs/spritejs')" >spritejs</button>
+			<button style="background-color: #007580; width: 200rpx; color: white;" @click="toPage('/pages/newpage/flycard')" >flycard</button>
 		</view>
 	</view>
 </template>

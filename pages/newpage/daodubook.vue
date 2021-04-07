@@ -4,7 +4,7 @@
 			<!-- <swiper style="width: 750rpx; height: 1624rpx; scale: (0.8, 0.6);" 
 			autoplay="autoplay" vertical="vertical" :previous-margin="prenext" :next-margin="prenext"> -->
 			<swiper class="swiper" :class="{swiper_active: isActive}" :previous-margin="prenext" :next-margin="prenext" >
-				<swiper-item>
+				<swiper-item style="transition: all  0.5s;">
 					<view style="display: flex; align-items: center; justify-content: center;">
 						<!-- <view class="bookbox" :class="{bookbox_active: isActive }" @click="read">你还好吗</view> -->
 						<view class="bookbox" :class="{bookbox_active: isActive }" @click="read">
@@ -46,7 +46,7 @@
 						</view>
 					</view>
 				</swiper-item>
-				<swiper-item>
+				<swiper-item style="transition: all  0.5s;">
 					<view style="display: flex; align-items: center; justify-content: center;">
 						<view class="bookbox" :class="{bookbox_active: isActive }" @click="read">我很好</view>
 					</view>
@@ -75,7 +75,9 @@
 			read(){
 				if(this.isActive){
 					this.isActive = !this.isActive
-					this.prenext = '40rpx'
+					// setTimeout(() => {
+						this.prenext = '40rpx'
+					// },500)
 				}else {
 					this.isActive = !this.isActive
 					this.prenext = '0rpx'
