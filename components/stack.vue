@@ -15,7 +15,7 @@
         <div v-html="item.html"></div>
 		<!-- <view class="ig">
 			asdasdasdasdasdasdasdadddddddddddddddd
-		</view> -->`1
+		</view> -->
       </view>
     </view>
 </template>

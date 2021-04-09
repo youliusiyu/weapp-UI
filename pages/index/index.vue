@@ -36,9 +36,9 @@
 		</view>
 		<view style="display: flex;align-items: center;justify-content: center; flex-direction: column;">
 			<button style="background-color: #007580; width: 200rpx; color: white;" @click="toPage('/pages/pixi/pixi')" >PIXI</button>
-			<button style="background-color: #007580; width: 200rpx; color: white;" @click="toPage('/pages/createjs/createjs')" >createjs</button>
 			<button style="background-color: #007580; width: 200rpx; color: white;" @click="toPage('/pages/spritejs/spritejs')" >spritejs</button>
-			<button style="background-color: #007580; width: 200rpx; color: white;" @click="toPage('/pages/newpage/flycard')" >flycard</button>
+			<button style="background-color: #007580; width: 200rpx; color: white;" @click="toPage('/pages/newpage/index')" >index</button>
+			<button style="background-color: #007580; width: 200rpx; color: white;" @click="toPage('/pages/formCreate/formCreate')" >formCreate</button>
 		</view>
 	</view>
 </template>

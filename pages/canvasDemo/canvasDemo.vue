@@ -67,38 +67,38 @@
 				// this.ctx6.setFillStyle('red')
 				// this.ctx6.fillRect(0, 0, 150, 200)
 				// this.ctx6.draw()
-				var canvas = new fabric.Canvas('card-canvas');
-				var rect = new fabric.Rect({
-					top: 50,
-					left: 100,
-					width: 100,
-					height: 70,
-					fill: 'red'
-				});
-				canvas.add(rect);
+				// var canvas = new fabric.Canvas('card-canvas');
+				// var rect = new fabric.Rect({
+				// 	top: 50,
+				// 	left: 100,
+				// 	width: 100,
+				// 	height: 70,
+				// 	fill: 'red'
+				// });
+				// canvas.add(rect);
 
-				/*  */
-				let select = fabric.Image.fromURL('../../static/images/question/1/1-1.png', function(oImg) {
-					oImg.scale(0.5); //图片缩小10倍
-					oImg.on('selected', function() { //选中监听事件
-						console.log('selected a rectangle');
-					});
-					canvas.add(oImg);
-				});
-				let select1 = fabric.Image.fromURL('../../static/images/question/1/2-1.png', function(oImg1) {
-					oImg1.scale(0.5); //图片缩小10倍
-					oImg1.on('selected', function() { //选中监听事件
-						console.log('selected1 a rectangle');
-					});
-					canvas.add(oImg1);
-				});
-				let select2 = fabric.Image.fromURL('../../static/images/question/1/3-1.png', function(oImg2) {
-					oImg2.scale(0.5); //图片缩小10倍
-					oImg2.on('selected', function() { //选中监听事件
-						console.log('selected2 a rectangle');
-					});
-					canvas.add(oImg2);
-				});
+				// /*  */
+				// let select = fabric.Image.fromURL('../../static/images/question/1/1-1.png', function(oImg) {
+				// 	oImg.scale(0.5); //图片缩小10倍
+				// 	oImg.on('selected', function() { //选中监听事件
+				// 		console.log('selected a rectangle');
+				// 	});
+				// 	canvas.add(oImg);
+				// });
+				// let select1 = fabric.Image.fromURL('../../static/images/question/1/2-1.png', function(oImg1) {
+				// 	oImg1.scale(0.5); //图片缩小10倍
+				// 	oImg1.on('selected', function() { //选中监听事件
+				// 		console.log('selected1 a rectangle');
+				// 	});
+				// 	canvas.add(oImg1);
+				// });
+				// let select2 = fabric.Image.fromURL('../../static/images/question/1/3-1.png', function(oImg2) {
+				// 	oImg2.scale(0.5); //图片缩小10倍
+				// 	oImg2.on('selected', function() { //选中监听事件
+				// 		console.log('selected2 a rectangle');
+				// 	});
+				// 	canvas.add(oImg2);
+				// });
 
 				/*  */
 				// var imgInstance = new fabric.Image('../../static/images/question/1/1-1.png', { //设置图片位置和样子

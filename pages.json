@@ -56,16 +56,6 @@
             
         }
         ,{
-            "path" : "pages/createjs/createjs",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false,
-				"navigationStyle":"custom"
-            }
-            
-        }
-        ,{
             "path" : "pages/spritejs/spritejs",
             "style" :                                                                                    
             {
@@ -95,6 +85,27 @@
 		    }
 		    
 		}
+		,{
+		    "path" : "pages/newpage/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/formCreate/formCreate",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+		    }
+		    
+		}
+		
     ],
 	// "tabBar": {
 	// 	"color": "#FFFFFF",

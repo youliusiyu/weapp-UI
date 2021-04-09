@@ -4,9 +4,9 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
+    "@form-create/element-ui": "^2.5.3",
     "babel-plugin-import": "^1.13.3",
-    "createjs": "^1.0.1",
-    "fabric": "^4.3.1",
+    "element-ui": "^2.15.1",
     "pixi.js": "^6.0.0",
     "script-loader": "^0.7.2",
     "spritejs": "^3.7.29",
